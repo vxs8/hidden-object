@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.box {
+			height: 100px;
+			width: 100px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-image: url(2.webp); width: 1500px; height: 900px;">
+		<div style="background: orange; height: 400px; width: 200px;">
+			<h3 class="item1">Предмет 1</h3>
+			<h3 class="item2">Предмет 2</h3>
+			<h3 class="item3">Предмет 3</h3>
+			<h3 class="item4">Предмет 4</h3>
+			<h3>ОЧКИ:  <span class="score"></span>  </h3>
+		</div>
+		<div class="box div1" style="left: 456px; background-image: url(bird_wild-png.png); background-size: 100%;">
+		</div>
+		<div class="box div2" style="left: 123px; top: 569px; background-image: url(2024-07-02_MDD-MCD_Web_Breeder-Store_Homepage_Unleash_Cat.webp); background-size: 100%;">
+		</div>
+		<div class="box div3" style="left: 833px; top: 653px; background-image: url(Item_Cheese.webp); background-size: 100%;">
+		</div>
+		<div class="box div4" style="left: 272px; top: 32px; background-image: url(https___hypebeast.com_image_2020_09_mona-lisa-hidden-drawing-pascal-cotte-discovery-0.png); background-size: 100% 100%;">
+		</div>
+	</div>
+	<script type="text/javascript">
+		let score = 0;
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".div1").onclick = function() {
+			document.querySelector(".div1").style.display = "none";
+			document.querySelector(".item1").style.textDecoration = "line-through";
+			alert("нашелооооооо")
+			score = score + 1
+			document.querySelector(".score").innerHTML = score;
+		}
+
+		document.querySelector(".div2").onclick = function() {
+			document.querySelector(".div2").style.display = "none";
+			document.querySelector(".item2").style.textDecoration = "line-through";
+			alert("нашелооооооо")
+			score = score + 1
+			document.querySelector(".score").innerHTML = score;
+		}
+		document.querySelector(".div3").onclick = function() {
+			document.querySelector(".div3").style.display = "none";
+			document.querySelector(".item3").style.textDecoration = "line-through";
+			alert("нашелооооооо")
+			score = score + 1
+			document.querySelector(".score").innerHTML = score;
+		}
+
+		document.querySelector(".div4").onclick = function() {
+			document.querySelector(".div4").style.display = "none";
+			document.querySelector(".item4").style.textDecoration = "line-through";
+			alert("нашелооооооо")
+			score = score + 1
+			document.querySelector(".score").innerHTML = score;
+		}
+	</script>
+</body>
+</html>
